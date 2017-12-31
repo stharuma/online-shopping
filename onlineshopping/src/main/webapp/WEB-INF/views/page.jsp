@@ -40,10 +40,10 @@ ${contextRoot} says  ${greeting}
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap Readable Theme CSS -->
-<%-- <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet"> --%>
+<!-- <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet"> -->
 
 <!-- Bootstrap Minty Theme CSS -->
-<link href="${css}/bootstrap-minty-theme.css" rel="stylesheet">
+<!--<link href="${css}/bootstrap-minty-theme.css" rel="stylesheet">-->
 
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -70,8 +70,9 @@ ${contextRoot} says  ${greeting}
 		<%@include file="contact.jsp"%>
 	</c:if>
 
-	<!--Load only user clicks Contact  -->
-	<c:if test="${userClickListProducts == true }">
+	<!--Load only user clicks View Products  -->
+	<c:if
+		test="${userClickAllProducts == true or userClickCategoryProducts == true }">
 		<%@include file="listProducts.jsp"%>
 	</c:if>
 

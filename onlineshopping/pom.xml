@@ -13,6 +13,12 @@
 		<spring.version>4.3.6.RELEASE</spring.version>
 	</properties>
 	<dependencies>
+		<!-- Link backend project -->
+		<dependency>
+			<groupId>net.stharuma</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!--Java EE API -->
 		<dependency>
 			<groupId>javax</groupId>
